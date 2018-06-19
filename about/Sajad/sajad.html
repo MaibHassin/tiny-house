@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sajad Zahiri Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+</head>
+<body>
+    <div class="bgmain">
+    <div class="nav"> 
+        <a class="but1" href="#">Back</a>
+        <a class="but2" href="#">ABOUT ME</a>
+    </div>
+    
+        <div class="mainc">
+        
+            <div class="home">
+                <h1 id="bh">Sajad Zahiri</h1>
+                <h2>Senior Researcher </h2>
+            </div>
+            <div class="aboutme">
+            <p><span id="headername">Sajad Zahiri</span><br>
+                I work as a researcher and what i mainly do is look through different kind of information and try to decide which one would be Interesting or useful to people using our website. <br> 
+                
+                
+                
+            </p>
+            </div>
+            
+            <div class="portfolio">
+                <div class="pics">
+                    <img src="images/p-image%201.jpg"/>
+                </div>
+                <div class="pics">
+                    <img src="images/p-image%202.jpg"/>
+                </div>
+                <div class="pics">
+                    <img src="images/p-image%203.jpg"/>
+                </div>
+                <div class="pics">
+                    <img src="images/p-image%204.jpg"/>
+                </div>
+                <div class="pics">
+                    <img src="images/p-image%205.jpg"/>
+                </div>
+                <div class="pics">
+                    <img src="images/p-image%206.jpg"/>
+                </div>
+                <div class="pics">
+                    <img src="images/p-image%207.jpg"/>
+                </div>
+                <div class="pics">
+                    <img src="images/p-image%208.jpg"/>
+                </div>
+                <div class="pics">
+                    <img src="images/p-image%209.jpg"/>
+                </div>
+            </div>
+        </div>   
+    </div>
+   
+    
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    
+    <script>
+         $(document).ready(function(){
+             $('a').click(function(){
+                 //alert("hello");
+                 var selected = $(this);
+                 $('a').removeClass('active');
+                 $(selected).addClass('active');
+             });
+             
+             
+             var $a = $('.but1'),
+                 $b = $('.but2'),
+                 $c = $('.but3'),
+                 $home = $('.home'),
+                 $aboutme = $('.aboutme'),
+                 $portfolio = $('.portfolio');
+                 
+                 $a.click(function(){
+                     $home.fadeIn();
+                     $aboutme.fadeOut();
+                     $portfolio.fadeOut();
+                 });
+                 $b.click(function(){
+                        $aboutme.fadeIn();
+                        $home.fadeOut();
+                        $portfolio.fadeOut();   
+                         });
+                 $c.click(function(){
+                        $portfolio.fadeIn();
+                        $home.fadeOut();
+                        $aboutme.fadeOut();    
+                         });
+         });
+    
+    </script>
+</body>
+</html>
